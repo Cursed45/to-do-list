@@ -1,0 +1,105 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    background-color: #33475b;
+    padding: 2%;
+}
+.container{
+    margin: 10%;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #DBF9FC;
+
+}
+input{
+    border: none;
+    outline:none;
+    flex:1;
+    background-color: #acc8d2;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 30px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 12px 40px;
+    font-size:16px ;
+    border-radius:40px ;
+    color:#7c7a7a;
+    cursor: pointer;
+}
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+ul li{
+list-style: none;
+font-size: 17px;
+padding:12px 8px 12px 20px ;
+user-select: none;
+cursor: pointer;
+
+
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width:10px;
+    height: 40px;
+    font-size:22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+
+}
+ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+ul li {
+    position: relative; /* Ensure proper positioning for the pseudo-element */
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+
+}
+
+ul li::before {
+    content: ''; /* Empty content to create a visual indicator */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    background-color: #fff; /* Background color for the checkbox */
+    border: 1px solid #ccc; /* Border for the checkbox */
+    border-radius: 50%;
+}
+
+ul li.checked::before {
+    content: '\2714'; /* Unicode character for check mark */
+    color:#555;
+
+}
+ul li.checked {
+    text-decoration: line-through; /* Add line-through text decoration for completed tasks */
+    color: #555; /* Adjust text color for completed tasks */
+}
+
